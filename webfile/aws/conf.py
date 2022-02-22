@@ -1,13 +1,13 @@
 import datetime
-AWS_ACCESS_KEY_ID = "AKIAXOPGFALJMIP57IGZ"
-AWS_SECRET_ACCESS_KEY = "kY5CVjFq6WWGRbtxT3m/fOxpTQqHtp2P9J2HgddM"
+AWS_ACCESS_KEY_ID = "<Put your Access Key>"
+AWS_SECRET_ACCESS_KEY = "<Secrete Access Key>"
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = True
 
 DEFAULT_FILE_STORAGE = 'webfile.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'webfile.aws.utils.StaticRootS3BotoStorage'
-AWS_STORAGE_BUCKET_NAME = 'awsuploadfiles'
+AWS_STORAGE_BUCKET_NAME = '<Your_Bucket_Name>'
 S3DIRECT_REGION = 'eu-west-2'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
